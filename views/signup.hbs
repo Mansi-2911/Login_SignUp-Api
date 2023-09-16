@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            margin: 50pxs;
+        }
+        .form-container{
+            width: 490px;
+            height: 350px;
+            padding: 20px;
+            border-radius: 5px;
+           
+            box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .form-container h3 
+        {
+         text-align: center;
+        }
+
+        .form-container form input{
+            display: block;
+            padding : 10px;
+            width: 90%;
+            height: 100%;
+            margin: 5px 4px;
+            border-radius: 5px;
+            border-color: #fff;
+            outline: none;
+            
+        }
+        .form-container a{
+            text-decoration: none;
+            color: black;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .form-container a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <H1>Welcome to the SignUp Page</H1>
+    <div class="form-container">
+        <h3>SignUp Form</h3>
+        <form action="/signup" method="post">
+        <input type="email" name="email" id="email" placeholder="Enter email id" required>
+        <input type="text"name= "username"  id= "username"placeholder="Enter username" required>
+        <input type="password" name="password" id="passowrd" placeholder="Enter password" required>
+        <input type="submit" value="SignUp">
+        <a href="/login">Want to Login?Click here</a>
+        </form>
+    </div>
+</body>
+</html>
